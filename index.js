@@ -42,6 +42,9 @@ class Particle {
 canvas.addEventListener('click', function (event) {
     mouse.x = event.x
     mouse.y = event.y
+    for (let i = 0; i < 10; i++) {
+        particleArr.push(new Particle())
+    }
 })
 canvas.addEventListener('mousemove', function (event) {
     mouse.x = event.x
